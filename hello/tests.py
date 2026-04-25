@@ -7,4 +7,4 @@ class HomePageTests(SimpleTestCase):
         response = self.client.get(reverse("home"))
 
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Hello, Django")
+        self.assertContains(response, "Welcome to Django")
